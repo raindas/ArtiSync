@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchBar: View {
     
     @Binding var text: String
+    let placeholder: String
     @State private var isEditing = false
     
     var body: some View {
@@ -21,7 +22,7 @@ struct SearchBar: View {
                     .frame(width: 20, height: 20)
                     .foregroundColor(.secondary)
                 
-                TextField("Search ArtiSync", text: $text)
+                TextField(placeholder, text: $text)
                     .foregroundColor(.secondary)
                     .font(.title3)
                     .padding(.leading)
@@ -56,6 +57,6 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(text: .constant(""))
+        SearchBar(text: .constant(""), placeholder: "Search ArtiSync")
     }
 }

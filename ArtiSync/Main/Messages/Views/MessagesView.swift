@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct MessagesView: View {
+    
+    @State private var searchQuery:String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                SearchBar(text: $searchQuery, placeholder: "Search messages").padding()
+                
+                ScrollView {
+                    
+                }
+            }.navigationTitle("Messages")
+        }
     }
 }
 

@@ -13,7 +13,7 @@ struct ExploreView: View {
     
     var body: some View {
         VStack {
-            SearchBar(text: $searchQuery)
+            SearchBar(text: $searchQuery, placeholder: "Search ArtiSync")
                 .padding(.bottom)
             
             GeometryReader { reader in

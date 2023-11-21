@@ -15,7 +15,7 @@ struct MarketPlaceView: View {
         
         NavigationStack {
             VStack {
-                SearchBar(text: $searchQuery).padding()
+                SearchBar(text: $searchQuery, placeholder: "Search ArtiSync market").padding()
                 
                 ScrollView {
                     LazyVStack(spacing: 25) {
