@@ -19,6 +19,7 @@
 		04ACB4792B0CFA83002B9668 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4782B0CFA83002B9668 /* SearchBar.swift */; };
 		04ACB47B2B0CFF43002B9668 /* ExplorePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB47A2B0CFF43002B9668 /* ExplorePost.swift */; };
 		04ACB47F2B0D11AC002B9668 /* MarketPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB47E2B0D11AC002B9668 /* MarketPlaceView.swift */; };
+		04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4812B0D18DE002B9668 /* MarketPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		04ACB4782B0CFA83002B9668 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		04ACB47A2B0CFF43002B9668 /* ExplorePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePost.swift; sourceTree = "<group>"; };
 		04ACB47E2B0D11AC002B9668 /* MarketPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceView.swift; sourceTree = "<group>"; };
+		04ACB4812B0D18DE002B9668 /* MarketPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		04087BB42B0C36B40060F473 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				04ACB4802B0D18BC002B9668 /* MarketPlace */,
 				04ACB4772B0CF96F002B9668 /* Explore */,
 				04087BB52B0C36CA0060F473 /* Home */,
 			);
@@ -169,6 +172,14 @@
 				04ACB47E2B0D11AC002B9668 /* MarketPlaceView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04ACB4802B0D18BC002B9668 /* MarketPlace */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4812B0D18DE002B9668 /* MarketPost.swift */,
+			);
+			path = MarketPlace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */,
 				04087BBB2B0C3FAF0060F473 /* HomeView.swift in Sources */,
 				04ACB4792B0CFA83002B9668 /* SearchBar.swift in Sources */,
+				04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */,
 				04ACB47F2B0D11AC002B9668 /* MarketPlaceView.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04ACB47B2B0CFF43002B9668 /* ExplorePost.swift in Sources */,
