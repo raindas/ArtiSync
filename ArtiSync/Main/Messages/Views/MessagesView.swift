@@ -16,9 +16,11 @@ struct MessagesView: View {
             VStack {
                 SearchBar(text: $searchQuery, placeholder: "Search messages").padding()
                 
-                ScrollView {
-                    
-                }
+                List{
+                    ForEach(1...10, id:\.self) { _ in
+                        MessageListItem(userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", username: "Viktoria Gnader", msg: "This is just a short message to simulate an actual message ...")
+                    }
+                }.listStyle(.plain)
             }.navigationTitle("Messages")
         }
     }
