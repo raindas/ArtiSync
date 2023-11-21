@@ -35,7 +35,7 @@ struct AccountView: View {
                     Group {
                         Text("30 Following")
                         Divider().frame(height: 20)
-                        Text("210K Followers")
+                        Text("21K Followers")
                     }
                     .foregroundColor(.primary)
                     .font(.title3)
