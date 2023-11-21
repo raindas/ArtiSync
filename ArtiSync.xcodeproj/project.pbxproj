@@ -12,6 +12,7 @@
 		04087BA62B0C343C0060F473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04087BA52B0C343C0060F473 /* Assets.xcassets */; };
 		04087BA92B0C343C0060F473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04087BA82B0C343C0060F473 /* Preview Assets.xcassets */; };
 		04087BB32B0C36280060F473 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB22B0C36280060F473 /* ForYouView.swift */; };
+		04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB62B0C36FB0060F473 /* ProjectPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		04087BA52B0C343C0060F473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04087BA82B0C343C0060F473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04087BB22B0C36280060F473 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
+		04087BB62B0C36FB0060F473 /* ProjectPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				04087BA12B0C34390060F473 /* ArtiSyncApp.swift */,
 				04087BA32B0C34390060F473 /* ContentView.swift */,
+				04087BB42B0C36B40060F473 /* Components */,
 				04087BAF2B0C35AE0060F473 /* Main */,
 				04087BA52B0C343C0060F473 /* Assets.xcassets */,
 				04087BA72B0C343C0060F473 /* Preview Content */,
@@ -92,6 +95,22 @@
 				04087BB22B0C36280060F473 /* ForYouView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		04087BB42B0C36B40060F473 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				04087BB52B0C36CA0060F473 /* Home */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		04087BB52B0C36CA0060F473 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04087BB62B0C36FB0060F473 /* ProjectPost.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
+				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04087BB32B0C36280060F473 /* ForYouView.swift in Sources */,
 			);
