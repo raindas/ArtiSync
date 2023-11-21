@@ -9,27 +9,46 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        HStack {
-            Button {
-                
-            } label: {
-                Text("For You")
-                    .foregroundColor(.primary)
-                    .font(.headline)
-                    .fontWeight(.bold)
-            }
+        ZStack {
             
-            Spacer()
+            ForYouView()
             
-            Button {
+            VStack {
                 
-            } label: {
-                Text("Following")
-                    .foregroundColor(.primary)
-                    .font(.headline)
-                    .fontWeight(.regular)
-            }
-        }
+                HStack {
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("For You")
+                            .foregroundColor(.primary)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Following")
+                            .foregroundColor(.primary)
+                            .font(.headline)
+                            .fontWeight(.regular)
+                    }.padding(.leading)
+                    
+                    Spacer()
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 50)
+                        .foregroundColor(.primary.opacity(0.25))
+                        .frame(width: 225, height: 45)
+                )
+                
+                Spacer()
+            }.padding(.top, 80)
+            
+        }.ignoresSafeArea(.all)
     }
 }
 
