@@ -13,6 +13,7 @@
 		04087BA92B0C343C0060F473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04087BA82B0C343C0060F473 /* Preview Assets.xcassets */; };
 		04087BB32B0C36280060F473 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB22B0C36280060F473 /* ForYouView.swift */; };
 		04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB62B0C36FB0060F473 /* ProjectPost.swift */; };
+		04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB82B0C3F4F0060F473 /* FollowingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		04087BA82B0C343C0060F473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04087BB22B0C36280060F473 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
 		04087BB62B0C36FB0060F473 /* ProjectPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPost.swift; sourceTree = "<group>"; };
+		04087BB82B0C3F4F0060F473 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				04087BB22B0C36280060F473 /* ForYouView.swift */,
+				04087BB82B0C3F4F0060F473 /* FollowingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
+				04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04087BB32B0C36280060F473 /* ForYouView.swift in Sources */,
 			);
