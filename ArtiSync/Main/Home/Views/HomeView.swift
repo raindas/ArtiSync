@@ -24,7 +24,7 @@ struct HomeView: View {
                     } label: {
                         Text("For You")
                             .foregroundColor(.primary)
-                            .font(.headline)
+                            .font(.title3)
                             .fontWeight(.bold)
                     }
                     
@@ -32,8 +32,8 @@ struct HomeView: View {
                         
                     } label: {
                         Text("Following")
-                            .foregroundColor(.primary)
-                            .font(.headline)
+                            .foregroundColor(.secondary)
+                            .font(.title3)
                             .fontWeight(.regular)
                     }.padding(.leading)
                     
