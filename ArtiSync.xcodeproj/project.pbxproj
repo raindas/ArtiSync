@@ -20,6 +20,7 @@
 		04ACB47B2B0CFF43002B9668 /* ExplorePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB47A2B0CFF43002B9668 /* ExplorePost.swift */; };
 		04ACB47F2B0D11AC002B9668 /* MarketPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB47E2B0D11AC002B9668 /* MarketPlaceView.swift */; };
 		04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4812B0D18DE002B9668 /* MarketPost.swift */; };
+		04ACB48A2B0D3F2E002B9668 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4892B0D3F2E002B9668 /* MessagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		04ACB47A2B0CFF43002B9668 /* ExplorePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePost.swift; sourceTree = "<group>"; };
 		04ACB47E2B0D11AC002B9668 /* MarketPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceView.swift; sourceTree = "<group>"; };
 		04ACB4812B0D18DE002B9668 /* MarketPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPost.swift; sourceTree = "<group>"; };
+		04ACB4892B0D3F2E002B9668 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,9 @@
 		04087BAF2B0C35AE0060F473 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04ACB4872B0D3EF0002B9668 /* Auth */,
+				04ACB4852B0D3EDE002B9668 /* Account */,
+				04ACB4832B0D3ECA002B9668 /* Messages */,
 				04ACB47C2B0D1157002B9668 /* MarketPlace */,
 				04ACB4732B0CF835002B9668 /* Explore */,
 				04087BB02B0C35C00060F473 /* Home */,
@@ -182,6 +187,52 @@
 			path = MarketPlace;
 			sourceTree = "<group>";
 		};
+		04ACB4832B0D3ECA002B9668 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4842B0D3ED3002B9668 /* Views */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		04ACB4842B0D3ED3002B9668 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4892B0D3F2E002B9668 /* MessagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04ACB4852B0D3EDE002B9668 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4862B0D3EE9002B9668 /* Views */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		04ACB4862B0D3EE9002B9668 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04ACB4872B0D3EF0002B9668 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4882B0D3EFE002B9668 /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		04ACB4882B0D3EFE002B9668 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +311,7 @@
 				04ACB4792B0CFA83002B9668 /* SearchBar.swift in Sources */,
 				04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */,
 				04ACB47F2B0D11AC002B9668 /* MarketPlaceView.swift in Sources */,
+				04ACB48A2B0D3F2E002B9668 /* MessagesView.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04ACB47B2B0CFF43002B9668 /* ExplorePost.swift in Sources */,
 				04087BB32B0C36280060F473 /* ForYouView.swift in Sources */,
