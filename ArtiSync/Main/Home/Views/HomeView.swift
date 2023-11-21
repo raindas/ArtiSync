@@ -28,6 +28,8 @@ struct HomeView: View {
                             .fontWeight(.bold)
                     }
                     
+                    Divider().frame(height: 20).padding(.horizontal, 10)
+                    
                     Button {
                         
                     } label: {
@@ -35,7 +37,7 @@ struct HomeView: View {
                             .foregroundColor(.secondary)
                             .font(.title3)
                             .fontWeight(.regular)
-                    }.padding(.leading)
+                    }
                     
                     Spacer()
                 }

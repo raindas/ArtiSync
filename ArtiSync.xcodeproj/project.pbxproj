@@ -22,6 +22,7 @@
 		04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4812B0D18DE002B9668 /* MarketPost.swift */; };
 		04ACB48A2B0D3F2E002B9668 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4892B0D3F2E002B9668 /* MessagesView.swift */; };
 		04ACB48D2B0D42BE002B9668 /* MessageListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB48C2B0D42BD002B9668 /* MessageListItem.swift */; };
+		04ACB48F2B0D4675002B9668 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB48E2B0D4675002B9668 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		04ACB4812B0D18DE002B9668 /* MarketPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPost.swift; sourceTree = "<group>"; };
 		04ACB4892B0D3F2E002B9668 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		04ACB48C2B0D42BD002B9668 /* MessageListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListItem.swift; sourceTree = "<group>"; };
+		04ACB48E2B0D4675002B9668 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 		04ACB4862B0D3EE9002B9668 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04ACB48E2B0D4675002B9668 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
 				04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */,
+				04ACB48F2B0D4675002B9668 /* AccountView.swift in Sources */,
 				04087BBB2B0C3FAF0060F473 /* HomeView.swift in Sources */,
 				04ACB4792B0CFA83002B9668 /* SearchBar.swift in Sources */,
 				04ACB4822B0D18DE002B9668 /* MarketPost.swift in Sources */,

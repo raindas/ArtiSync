@@ -12,6 +12,7 @@ struct ExplorePost: View {
     let postImg:String
     let userDP:String
     let title:String
+    let pageType: String
     
     var body: some View {
         
@@ -23,13 +24,15 @@ struct ExplorePost: View {
             }
             
             HStack {
-                AsyncImage(url: URL(string: postImg)) { image in
-                    image.resizable()
-                } placeholder: {
-                    ProgressView()
+                if pageType == "explore" {
+                    AsyncImage(url: URL(string: postImg)) { image in
+                        image.resizable()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
                 }
-                .frame(width: 25, height: 25)
-                .clipShape(Circle())
                 
                 Text(title)
                     .foregroundColor(.primary)
@@ -49,6 +52,6 @@ struct ExplorePost: View {
 
 struct ExplorePost_Previews: PreviewProvider {
     static var previews: some View {
-        ExplorePost(postImg: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", title: "FLORA landing page")
+        ExplorePost(postImg: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", title: "FLORA landing page", pageType: "explore")
     }
 }
