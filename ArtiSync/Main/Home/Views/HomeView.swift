@@ -39,14 +39,14 @@ struct HomeView: View {
                     
                     Spacer()
                 }
+                .frame(width: 225, height: 45)
                 .background(
-                    RoundedRectangle(cornerRadius: 50)
-                        .foregroundColor(.primary.opacity(0.25))
-                        .frame(width: 225, height: 45)
+                    .ultraThinMaterial, in:
+                        RoundedRectangle(cornerRadius: 50)
                 )
                 
                 Spacer()
-            }.padding(.top, 80)
+            }.padding(.top, 70)
             
         }.ignoresSafeArea(.all)
     }
