@@ -58,7 +58,7 @@ struct ProjectPost: View {
                                 .frame(width: 50, height: 50)
                                 .foregroundColor(.secondary.opacity(0.25))
                         )
-                }
+                }.padding(.trailing)
             }.padding()
         }
         .background(Color.secondary.opacity(0.125))
