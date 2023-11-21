@@ -14,6 +14,7 @@
 		04087BB32B0C36280060F473 /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB22B0C36280060F473 /* ForYouView.swift */; };
 		04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB62B0C36FB0060F473 /* ProjectPost.swift */; };
 		04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BB82B0C3F4F0060F473 /* FollowingView.swift */; };
+		04087BBB2B0C3FAF0060F473 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04087BBA2B0C3FAF0060F473 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		04087BB22B0C36280060F473 /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
 		04087BB62B0C36FB0060F473 /* ProjectPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPost.swift; sourceTree = "<group>"; };
 		04087BB82B0C3F4F0060F473 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
+		04087BBA2B0C3FAF0060F473 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				04087BB22B0C36280060F473 /* ForYouView.swift */,
 				04087BB82B0C3F4F0060F473 /* FollowingView.swift */,
+				04087BBA2B0C3FAF0060F473 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
 				04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */,
+				04087BBB2B0C3FAF0060F473 /* HomeView.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04087BB32B0C36280060F473 /* ForYouView.swift in Sources */,
 			);
