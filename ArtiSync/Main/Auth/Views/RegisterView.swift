@@ -11,6 +11,7 @@ struct RegisterView: View {
     
     @State var fname:String = ""
     @State var lname:String = ""
+    @State var uname:String = ""
     @State var email:String = ""
     @State var pass:String = ""
     @State var cpass:String = ""
@@ -35,6 +36,14 @@ struct RegisterView: View {
                 .padding(.top)
             
             TextField("Lastname", text: $lname)
+                .foregroundColor(.secondary)
+                .font(.title3)
+                .padding()
+                .background(Color.secondary.opacity(0.125))
+                .cornerRadius(50)
+                .padding(.top)
+            
+            TextField("Username", text: $uname)
                 .foregroundColor(.secondary)
                 .font(.title3)
                 .padding()
