@@ -13,45 +13,47 @@ struct LoginView: View {
     @State var pass:String = ""
     
     var body: some View {
-        NavigationStack {
-            VStack {
+        VStack(alignment: .leading) {
+            
+            Text("Log In")
+                .foregroundColor(.primary)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            TextField("Email address", text: $email)
+                .foregroundColor(.secondary)
+                .font(.title3)
+                .padding()
+                .background(Color.secondary.opacity(0.125))
+                .cornerRadius(50)
+                .padding(.top)
+            
+            SecureField("Password", text: $pass)
+                .foregroundColor(.secondary)
+                .font(.title3)
+                .padding()
+                .background(Color.secondary.opacity(0.125))
+                .cornerRadius(50)
+                .padding(.top)
+            
+            Button {
                 
-                TextField("Email address", text: $email)
-                    .foregroundColor(.secondary)
+            } label: {
+                Text("Login")
+                    .foregroundColor(.white)
                     .font(.title3)
+                    .fontWeight(.bold)
                     .padding()
-                    .background(Color.secondary.opacity(0.125))
+                    .frame(maxWidth: .infinity)
+                    .background(Color.primary)
                     .cornerRadius(50)
                     .padding(.top, 50)
-                
-                SecureField("Password", text: $pass)
-                    .foregroundColor(.secondary)
-                    .font(.title3)
-                    .padding()
-                    .background(Color.secondary.opacity(0.125))
-                    .cornerRadius(50)
-                    .padding(.top)
-                
-                Button {
-                    
-                } label: {
-                    Text("Login")
-                        .foregroundColor(.white)
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.primary)
-                        .cornerRadius(50)
-                        .padding(.top, 50)
-                }
-                
-                Spacer()
-                
             }
-            .padding()
-            .navigationTitle("Log In")
+            
+            Spacer()
+            
         }
+        .padding()
     }
 }
 
