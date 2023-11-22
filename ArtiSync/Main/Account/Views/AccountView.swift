@@ -18,7 +18,7 @@ struct AccountView: View {
         NavigationStack {
             VStack {
                 
-                if isUserLoggedIn {
+                if !isUserLoggedIn {
                     Button {
                         self.showAuth.toggle()
                     } label: {
