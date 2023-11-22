@@ -47,6 +47,11 @@ struct AccountView: View {
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .padding(.top)
+                            
+                            Text("@raindas")
+                                .foregroundColor(.secondary)
+                                .font(.headline)
+                                .fontWeight(.regular)
                         }
                         
                         HStack {
