@@ -75,6 +75,22 @@ struct AuthView: View {
                 }
                 
             }
+            .alert(isPresented: $authVM.isAlertTriggered, content: {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(authVM.alertMsg),
+                    dismissButton: .destructive(Text("Cancel")) {
+                        authVM.isAlertTriggered = false
+                    }
+                )
+            })
+            .onAppear {
+                if authVM.isLoggedSuccessful {
+                    dismissView()
+                } else {
+                    print("YO")
+                }
+            }
         }
     }
 }

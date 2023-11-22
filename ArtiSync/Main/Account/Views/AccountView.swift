@@ -12,12 +12,13 @@ struct AccountView: View {
     let userDP:String = "https://avatars.githubusercontent.com/u/65086989?v=4"
     @State private var isUserLoggedIn:Bool = false
     @State private var showAuth:Bool = false
+    @State private var showSettings:Bool = false
     
     var body: some View {
         NavigationStack {
             VStack {
                 
-                if !isUserLoggedIn {
+                if isUserLoggedIn {
                     Button {
                         self.showAuth.toggle()
                     } label: {
@@ -142,7 +143,7 @@ struct AccountView: View {
                     Spacer()
                     
                     Button {
-                        
+                        self.showSettings.toggle()
                     } label: {
                         Image(systemName: "gearshape.fill")
                             .resizable()
@@ -163,6 +164,38 @@ struct AccountView: View {
             }
             .fullScreenCover(isPresented: $showAuth) {
                 AuthView()
+            }
+            .sheet(isPresented: $showSettings) {
+                VStack {
+                    HStack {
+                        Spacer()
+                        
+                        Button {
+                            self.showSettings.toggle()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.primary)
+                                .background(
+                                    Circle()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(.secondary.opacity(0.25))
+                                )
+                                .padding()
+                        }
+                    }.padding()
+                    
+                    Form {
+                        Button(role: .destructive) {
+                            try? AuthenticationManager.shared.signOut()
+                        } label: {
+                            Text("Log out")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                        }
+                    }
+                }
             }
         }
     }

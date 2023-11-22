@@ -53,6 +53,7 @@ final class AuthVM: ObservableObject {
                 isAlertTriggered = true
                 alertMsg = "Error: \(error)"
                 isLoggedSuccessful = false
+                print(error)
             }
         }
     }

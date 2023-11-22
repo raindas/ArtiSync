@@ -14,6 +14,8 @@ struct LoginView: View {
     
     let vm:AuthVM
     
+    @Environment(\.dismiss) var dismissView
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -40,6 +42,7 @@ struct LoginView: View {
             
             Button {
                 vm.login(email: email, pass: pass)
+//                dismissView()
             } label: {
                 Text("Login")
                     .foregroundColor(.white)
