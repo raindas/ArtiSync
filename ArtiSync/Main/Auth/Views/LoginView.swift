@@ -12,6 +12,8 @@ struct LoginView: View {
     @State var email:String = ""
     @State var pass:String = ""
     
+    let vm:AuthVM
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -37,7 +39,7 @@ struct LoginView: View {
                 .padding(.top)
             
             Button {
-                
+                vm.login(email: email, pass: pass)
             } label: {
                 Text("Login")
                     .foregroundColor(.white)
@@ -59,6 +61,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(vm: AuthVM())
     }
 }

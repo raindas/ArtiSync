@@ -10,7 +10,7 @@ import SwiftUI
 struct AuthView: View {
     
     @State private var currentView:String = "login"
-    
+    @ObservedObject var authVM:AuthVM = AuthVM()
     @Environment(\.dismiss) var dismissView
     
     var body: some View {
@@ -69,7 +69,7 @@ struct AuthView: View {
                 )
                 
                 if currentView == "login" {
-                    LoginView()
+                    LoginView(vm: authVM)
                 } else {
                     RegisterView()
                 }
