@@ -35,7 +35,8 @@
 		04ACB4A82B0D9909002B9668 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4A72B0D9909002B9668 /* AuthDataResultModel.swift */; };
 		04BC3E802B0E9D2200DDBAC7 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E7F2B0E9D2200DDBAC7 /* Bundle.swift */; };
 		04BC3E822B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BC3E812B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json */; };
-		04BC3E852B0E9DB900DDBAC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */; };
+		04BC3E852B0E9DB900DDBAC7 /* HomePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E842B0E9DB900DDBAC7 /* HomePost.swift */; };
+		04BC3E882B0E9E7600DDBAC7 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E872B0E9E7600DDBAC7 /* HomeVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +66,8 @@
 		04ACB4A72B0D9909002B9668 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		04BC3E7F2B0E9D2200DDBAC7 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		04BC3E812B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArtiSyncStaticDB.json; sourceTree = "<group>"; };
-		04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		04BC3E842B0E9DB900DDBAC7 /* HomePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePost.swift; sourceTree = "<group>"; };
+		04BC3E872B0E9E7600DDBAC7 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		04087BB02B0C35C00060F473 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04BC3E862B0E9E4600DDBAC7 /* ViewModels */,
 				04BC3E832B0E9D9800DDBAC7 /* Models */,
 				04087BB12B0C35D10060F473 /* Views */,
 			);
@@ -318,9 +321,17 @@
 		04BC3E832B0E9D9800DDBAC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */,
+				04BC3E842B0E9DB900DDBAC7 /* HomePost.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		04BC3E862B0E9E4600DDBAC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04BC3E872B0E9E7600DDBAC7 /* HomeVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +416,7 @@
 			files = (
 				04ACB4982B0D8F8D002B9668 /* AuthVM.swift in Sources */,
 				04ACB4762B0CF855002B9668 /* ExploreView.swift in Sources */,
-				04BC3E852B0E9DB900DDBAC7 /* HomeModel.swift in Sources */,
+				04BC3E852B0E9DB900DDBAC7 /* HomePost.swift in Sources */,
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
 				04ACB4A82B0D9909002B9668 /* AuthDataResultModel.swift in Sources */,
@@ -420,6 +431,7 @@
 				04ACB47F2B0D11AC002B9668 /* MarketPlaceView.swift in Sources */,
 				04ACB48D2B0D42BE002B9668 /* MessageListItem.swift in Sources */,
 				04ACB48A2B0D3F2E002B9668 /* MessagesView.swift in Sources */,
+				04BC3E882B0E9E7600DDBAC7 /* HomeVM.swift in Sources */,
 				04087BA22B0C34390060F473 /* ArtiSyncApp.swift in Sources */,
 				04ACB4932B0D8BC3002B9668 /* RegisterView.swift in Sources */,
 				04ACB4952B0D8CA3002B9668 /* AuthView.swift in Sources */,

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ForYouView: View {
+    
+    @ObservedObject var homeVM:HomeVM = HomeVM()
+    
     var body: some View {
         ScrollView {
-            VStack(spacing: 25) {
+            LazyVStack(spacing: 25) {
                 Spacer().padding(.top, 80)
-                ForEach(1...5, id: \.self) { _ in
-                    ProjectPost(postImg: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", username: "Viktoria Gnader", title: "FLORA landing page")
+                ForEach(homeVM.posts) { post in
+                    ProjectPost(postImg: post.img, userDP: post.dp, username: post.username, title: post.title)
                 }
             }.padding()
         }

@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var forYouShowing:Bool = true
+    
     var body: some View {
         ZStack {
             
-            ForYouView()
+            if forYouShowing {
+                ForYouView()
+            } else {
+                FollowingView()
+            }
             
             VStack {
                 
@@ -20,23 +27,23 @@ struct HomeView: View {
                     Spacer()
                     
                     Button {
-                        
+                        forYouShowing = true
                     } label: {
                         Text("For You")
-                            .foregroundColor(.primary)
+                            .foregroundColor(forYouShowing ? .primary : .secondary)
                             .font(.title3)
-                            .fontWeight(.bold)
+                            .fontWeight(forYouShowing ? .bold : .regular)
                     }
                     
                     Divider().frame(height: 20).padding(.horizontal, 10)
                     
                     Button {
-                        
+                        forYouShowing = false
                     } label: {
                         Text("Following")
-                            .foregroundColor(.secondary)
+                            .foregroundColor(forYouShowing ? .secondary : .primary)
                             .font(.title3)
-                            .fontWeight(.regular)
+                            .fontWeight(forYouShowing ? .regular : .bold)
                     }
                     
                     Spacer()
