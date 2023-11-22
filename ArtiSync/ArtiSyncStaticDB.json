@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "img": "https://cdn.pixabay.com/photo/2016/04/12/05/06/claypots-1323747_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2016/03/30/08-05-14-111_250x250.jpg",
+        "title": "Claypots Terracotta",
+        "username": "johannatherealtor"
+    },
+    {
+        "id": 2,
+        "img": "https://cdn.pixabay.com/photo/2022/02/08/18/40/horse-7001948_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2023/04/02/21-49-54-625_250x250.jpg",
+        "title": "Wrought iron horse door bell",
+        "username": "ykaiavu"
+    },
+    {
+        "id": 3,
+        "img": "https://cdn.pixabay.com/photo/2019/11/08/20/46/pottery-4612452_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2022/07/17/16-35-41-826_250x250.jpg",
+        "title": "Traditional handmade clay pots",
+        "username": "dimitrisvetsikas1969"
+    },
+    {
+        "id": 4,
+        "img": "https://cdn.pixabay.com/photo/2016/01/30/19/00/lamp-1170379_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2016/01/30/18-42-21-72_250x250.jpg",
+        "title": "Lamp Art",
+        "username": "RicardoParra"
+    },
+    {
+        "id": 5,
+        "img": "https://cdn.pixabay.com/photo/2019/08/09/01/25/carving-4394055_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2019/08/09/10-47-46-855_250x250.jpg",
+        "title": "Wooden sculpture carving",
+        "username": "Emphyrio"
+    },
+    {
+        "id": 6,
+        "img": "https://cdn.pixabay.com/photo/2012/03/17/20/53/mask-22849_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2016/09/24/15-21-58-529_250x250.jpg",
+        "title": "Mask face pottery",
+        "username": "JamesDeMers"
+    },
+    {
+        "id": 7,
+        "img": "https://cdn.pixabay.com/photo/2019/06/15/17/24/motorcycle-4276105_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2023/10/20/07-59-09-417_250x250.jpg",
+        "title": "Homemade motorcycle bike",
+        "username": "manfredrichter"
+    },
+    {
+        "id": 8,
+        "img": "https://cdn.pixabay.com/photo/2021/10/15/22/37/bread-6713579_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2019/09/27/11-12-56-159_250x250.jpg",
+        "title": "Challah bread",
+        "username": "Ri_Ya"
+    },
+    {
+        "id": 9,
+        "img": "https://cdn.pixabay.com/photo/2022/06/08/15/23/ceramic-jar-7250712_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2021/05/08/17-08-47-749_250x250.jpg",
+        "title": "Ceramic garden jar",
+        "username": "tiemaoanh"
+    },
+    {
+        "id": 10,
+        "img": "https://cdn.pixabay.com/photo/2018/10/28/10/04/crafts-3778271_1280.jpg",
+        "dp": "https://cdn.pixabay.com/user/2023/01/28/10-17-02-989_250x250.jpg",
+        "title": "Hand clay decor",
+        "username": "VIVIANE6276"
+    }
+]

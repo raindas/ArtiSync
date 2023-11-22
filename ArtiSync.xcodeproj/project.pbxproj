@@ -33,6 +33,9 @@
 		04ACB4A32B0D9609002B9668 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 04ACB4A22B0D9609002B9668 /* FirebaseAuth */; };
 		04ACB4A52B0D974B002B9668 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4A42B0D974B002B9668 /* AuthenticationManager.swift */; };
 		04ACB4A82B0D9909002B9668 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4A72B0D9909002B9668 /* AuthDataResultModel.swift */; };
+		04BC3E802B0E9D2200DDBAC7 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E7F2B0E9D2200DDBAC7 /* Bundle.swift */; };
+		04BC3E822B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BC3E812B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json */; };
+		04BC3E852B0E9DB900DDBAC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		04ACB4992B0D90E3002B9668 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04ACB4A42B0D974B002B9668 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		04ACB4A72B0D9909002B9668 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
+		04BC3E7F2B0E9D2200DDBAC7 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		04BC3E812B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArtiSyncStaticDB.json; sourceTree = "<group>"; };
+		04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				04ACB4992B0D90E3002B9668 /* GoogleService-Info.plist */,
+				04BC3E812B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json */,
 				04087BA12B0C34390060F473 /* ArtiSyncApp.swift */,
 				04087BA32B0C34390060F473 /* ContentView.swift */,
+				04BC3E7E2B0E9D0800DDBAC7 /* Extensions */,
 				04087BB42B0C36B40060F473 /* Components */,
 				04087BAF2B0C35AE0060F473 /* Main */,
 				04087BA52B0C343C0060F473 /* Assets.xcassets */,
@@ -131,6 +139,7 @@
 		04087BB02B0C35C00060F473 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04BC3E832B0E9D9800DDBAC7 /* Models */,
 				04087BB12B0C35D10060F473 /* Views */,
 			);
 			path = Home;
@@ -298,6 +307,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		04BC3E7E2B0E9D0800DDBAC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04BC3E7F2B0E9D2200DDBAC7 /* Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04BC3E832B0E9D9800DDBAC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BC3E842B0E9DB900DDBAC7 /* HomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BC3E822B0E9D6100DDBAC7 /* ArtiSyncStaticDB.json in Resources */,
 				04087BA92B0C343C0060F473 /* Preview Assets.xcassets in Resources */,
 				04ACB49A2B0D90E3002B9668 /* GoogleService-Info.plist in Resources */,
 				04087BA62B0C343C0060F473 /* Assets.xcassets in Resources */,
@@ -379,12 +405,14 @@
 			files = (
 				04ACB4982B0D8F8D002B9668 /* AuthVM.swift in Sources */,
 				04ACB4762B0CF855002B9668 /* ExploreView.swift in Sources */,
+				04BC3E852B0E9DB900DDBAC7 /* HomeModel.swift in Sources */,
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
 				04ACB4A82B0D9909002B9668 /* AuthDataResultModel.swift in Sources */,
 				04ACB4A52B0D974B002B9668 /* AuthenticationManager.swift in Sources */,
 				04ACB4912B0D88A5002B9668 /* LoginView.swift in Sources */,
 				04087BB92B0C3F4F0060F473 /* FollowingView.swift in Sources */,
+				04BC3E802B0E9D2200DDBAC7 /* Bundle.swift in Sources */,
 				04ACB48F2B0D4675002B9668 /* AccountView.swift in Sources */,
 				04087BBB2B0C3FAF0060F473 /* HomeView.swift in Sources */,
 				04ACB4792B0CFA83002B9668 /* SearchBar.swift in Sources */,
