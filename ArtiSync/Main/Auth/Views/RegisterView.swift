@@ -15,6 +15,8 @@ struct RegisterView: View {
     @State var pass:String = ""
     @State var cpass:String = ""
     
+    @StateObject private var authVM:AuthVM = AuthVM()
+    
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -66,7 +68,7 @@ struct RegisterView: View {
                 .padding(.top)
             
             Button {
-                
+                authVM.register(email: email, pass: pass)
             } label: {
                 Text("Register")
                     .foregroundColor(.white)
