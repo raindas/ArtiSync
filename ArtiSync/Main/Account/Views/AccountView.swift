@@ -163,7 +163,7 @@ struct AccountView: View {
                 self.isUserLoggedIn = authUser != nil
             }
             .fullScreenCover(isPresented: $showAuth) {
-                AuthView()
+                AuthView(isUserLoggedIn: $isUserLoggedIn)
             }
             .sheet(isPresented: $showSettings) {
                 VStack {
@@ -189,6 +189,8 @@ struct AccountView: View {
                     Form {
                         Button(role: .destructive) {
                             try? AuthenticationManager.shared.signOut()
+                            self.isUserLoggedIn = false
+                            self.showSettings.toggle()
                         } label: {
                             Text("Log out")
                                 .font(.title3)

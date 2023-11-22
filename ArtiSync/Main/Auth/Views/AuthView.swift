@@ -12,6 +12,7 @@ struct AuthView: View {
     @State private var currentView:String = "login"
     @ObservedObject var authVM:AuthVM = AuthVM()
     @Environment(\.dismiss) var dismissView
+    @Binding var isUserLoggedIn:Bool
     
     var body: some View {
         NavigationStack {
@@ -69,7 +70,7 @@ struct AuthView: View {
                 )
                 
                 if currentView == "login" {
-                    LoginView(vm: authVM)
+                    LoginView(isUserLoggedIn: $isUserLoggedIn, vm: authVM)
                 } else {
                     RegisterView()
                 }
@@ -84,19 +85,12 @@ struct AuthView: View {
                     }
                 )
             })
-            .onAppear {
-                if authVM.isLoggedSuccessful {
-                    dismissView()
-                } else {
-                    print("YO")
-                }
-            }
         }
     }
 }
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        AuthView(isUserLoggedIn: .constant(false))
     }
 }

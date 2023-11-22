@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State var email:String = ""
     @State var pass:String = ""
+    @Binding var isUserLoggedIn:Bool
     
     let vm:AuthVM
     
@@ -41,7 +42,13 @@ struct LoginView: View {
                 .padding(.top)
             
             Button {
-                vm.login(email: email, pass: pass)
+                Task {
+                    vm.login(email: email, pass: pass)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        isUserLoggedIn = vm.isLoggedSuccessful
+                        dismissView()
+                    }
+                }
 //                dismissView()
             } label: {
                 Text("Login")
@@ -64,6 +71,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(vm: AuthVM())
+        LoginView(isUserLoggedIn: .constant(false), vm: AuthVM())
     }
 }

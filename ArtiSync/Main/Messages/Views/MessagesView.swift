@@ -50,7 +50,7 @@ struct MessagesView: View {
                 self.isUserLoggedIn = authUser != nil
             }
             .fullScreenCover(isPresented: $showAuth) {
-                AuthView()
+                AuthView(isUserLoggedIn: $isUserLoggedIn)
             }
         }
     }
