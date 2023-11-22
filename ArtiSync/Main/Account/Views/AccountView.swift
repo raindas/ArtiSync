@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccountView: View {
     
-    let userDP:String = "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg"
+    let userDP:String = "https://avatars.githubusercontent.com/u/65086989?v=4"
     @State private var isUserLoggedIn:Bool = false
     @State private var showAuth:Bool = false
     
