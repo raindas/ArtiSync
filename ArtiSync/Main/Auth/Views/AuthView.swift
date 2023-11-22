@@ -9,11 +9,31 @@ import SwiftUI
 
 struct AuthView: View {
     
+    @Binding var authShowing:Bool
     @State private var currentView:String = "login"
     
     var body: some View {
         NavigationStack {
             VStack {
+                
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "xmark")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.primary)
+                            .background(
+                                Circle()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(.secondary.opacity(0.25))
+                            )
+                            .padding()
+                    }
+                }.padding(.trailing)
                 
                 HStack {
                     
@@ -60,6 +80,6 @@ struct AuthView: View {
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        AuthView(authShowing: .constant(true))
     }
 }
