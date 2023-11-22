@@ -26,6 +26,7 @@
 		04ACB4912B0D88A5002B9668 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4902B0D88A5002B9668 /* LoginView.swift */; };
 		04ACB4932B0D8BC3002B9668 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4922B0D8BC3002B9668 /* RegisterView.swift */; };
 		04ACB4952B0D8CA3002B9668 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4942B0D8CA3002B9668 /* AuthView.swift */; };
+		04ACB4982B0D8F8D002B9668 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACB4972B0D8F8D002B9668 /* AuthVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		04ACB4902B0D88A5002B9668 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		04ACB4922B0D8BC3002B9668 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		04ACB4942B0D8CA3002B9668 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		04ACB4972B0D8F8D002B9668 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		04ACB4872B0D3EF0002B9668 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				04ACB4962B0D8F78002B9668 /* ViewModels */,
 				04ACB4882B0D3EFE002B9668 /* Views */,
 			);
 			path = Auth;
@@ -254,6 +257,14 @@
 				04ACB48C2B0D42BD002B9668 /* MessageListItem.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		04ACB4962B0D8F78002B9668 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04ACB4972B0D8F8D002B9668 /* AuthVM.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ACB4982B0D8F8D002B9668 /* AuthVM.swift in Sources */,
 				04ACB4762B0CF855002B9668 /* ExploreView.swift in Sources */,
 				04087BA42B0C34390060F473 /* ContentView.swift in Sources */,
 				04087BB72B0C36FB0060F473 /* ProjectPost.swift in Sources */,
