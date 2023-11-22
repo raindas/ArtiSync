@@ -24,7 +24,7 @@ struct MarketPost: View {
                 } placeholder: {
                     ProgressView()
                 }
-                .frame(width: 150, height: 200)
+                .frame(width: 150, height: 225)
                 
                 VStack {
                     
