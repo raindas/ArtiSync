@@ -9,8 +9,9 @@ import SwiftUI
 
 struct AuthView: View {
     
-    @Binding var authShowing:Bool
     @State private var currentView:String = "login"
+    
+    @Environment(\.dismiss) var dismissView
     
     var body: some View {
         NavigationStack {
@@ -20,7 +21,7 @@ struct AuthView: View {
                     Spacer()
                     
                     Button {
-                        
+                        dismissView()
                     } label: {
                         Image(systemName: "xmark")
                             .resizable()
@@ -80,6 +81,6 @@ struct AuthView: View {
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView(authShowing: .constant(true))
+        AuthView()
     }
 }
