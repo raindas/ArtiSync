@@ -10,6 +10,7 @@ import SwiftUI
 struct MarketPlaceView: View {
     
     @State private var searchQuery:String = ""
+    @ObservedObject var homeVM:HomeVM = HomeVM()
     
     var body: some View {
         
@@ -19,8 +20,8 @@ struct MarketPlaceView: View {
                 
                 ScrollView {
                     LazyVStack(spacing: 25) {
-                        ForEach(1...10, id:\.self) { _ in
-                            MarketPost(postImg: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", username: "Viktoria Gnader", title: "FLORA landing page", desc: "This is a very short description of the product, click on it to find more information about it.", price: "$200.00")
+                        ForEach(homeVM.posts) { post in
+                            MarketPost(postImg: post.img, userDP: post.dp, username: post.username, title: "FLORA landing page", desc: "This is a very short description of the product, click on it to find more information about it.", price: "₦20,000.00")
                         }
                     }.padding()
                 }
