@@ -8,5 +8,5 @@
 import Foundation
 
 final class AuthVM: ObservableObject {
-    @Published isLoggedIn:Bool = false
+    @Published var isLoggedIn:Bool = false
 }

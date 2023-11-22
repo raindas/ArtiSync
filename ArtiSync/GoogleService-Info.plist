@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAB-8THrxoePPnhJyq5nmHM5v5ISIm_bbQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1014143766564</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.presidentraindas.ArtiSync</string>
+	<key>PROJECT_ID</key>
+	<string>artisync-9b69a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>artisync-9b69a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1014143766564:ios:bc8929283c7565582fc8b1</string>
+</dict>
+</plist>
