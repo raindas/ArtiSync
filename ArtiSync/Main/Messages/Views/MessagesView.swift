@@ -10,18 +10,48 @@ import SwiftUI
 struct MessagesView: View {
     
     @State private var searchQuery:String = ""
+    @ObservedObject var homeVM:HomeVM = HomeVM()
+    
+    @State private var isUserLoggedIn:Bool = false
+    @State private var showAuth:Bool = false
     
     var body: some View {
         NavigationStack {
             VStack {
-                SearchBar(text: $searchQuery, placeholder: "Search messages").padding()
-                
-                List{
-                    ForEach(1...10, id:\.self) { _ in
-                        MessageListItem(userDP: "https://cdn.pixabay.com/audio/2023/08/31/14-35-42-339_200x200.jpg", username: "Viktoria Gnader", msg: "This is just a short message to simulate an actual message ...")
+                if !isUserLoggedIn {
+                    Button {
+                        self.showAuth.toggle()
+                    } label: {
+                        Text("Login")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.primary)
+                            .cornerRadius(50)
+                            .padding(.top, 50)
+                    }.padding()
+                } else {
+                    Group {
+                        SearchBar(text: $searchQuery, placeholder: "Search messages").padding()
+                        
+                        List {
+                            ForEach(homeVM.posts) { post in
+                                MessageListItem(userDP: post.dp, username: post.username, msg: "This is just a short message to simulate an actual message ...")
+                            }
+                        }.listStyle(.plain)
                     }
-                }.listStyle(.plain)
-            }.navigationTitle("Messages")
+                }
+            }
+            .navigationTitle("Messages")
+            .onAppear {
+                let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
+                self.isUserLoggedIn = authUser != nil
+            }
+            .fullScreenCover(isPresented: $showAuth) {
+                AuthView()
+            }
         }
     }
 }
